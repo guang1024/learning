@@ -12,5 +12,5 @@ urlpatterns = [
     #显示所有的主题
     path(r'topics/', views.topics, name='topics'),
     #re_path(r'^topics/$', views.topics, name='topics'),
-    re_path(r'^topics/(?P<topic_id>\d+)/$', views.topics, name='topic'),
+    re_path(r'^topics/(?P<topic_id>\d+)/$', views.topic, name='topic'),
 ]
