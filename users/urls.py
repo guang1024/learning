@@ -3,7 +3,6 @@
 from django.urls import path,re_path
 from django.contrib.auth import login
 from django.contrib.auth.views import LoginView
-import os
 
 from . import views
 
