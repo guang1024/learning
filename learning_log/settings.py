@@ -70,6 +70,10 @@ TEMPLATES = [
     },
 ]
 
+
+
+
+
 WSGI_APPLICATION = 'learning_log.wsgi.application'
 
 

@@ -3,8 +3,14 @@
 from django.urls import path,re_path
 from django.contrib.auth import login
 from django.contrib.auth.views import LoginView
+import os
 
 from . import views
+
+SETTINGS_PATH = os.path.normpath(os.path.dirname(__file__))
+TEMPLATE_DIRS = (
+    os.path.join(SETTINGS_PATH, 'templates'),
+)
 
 urlpatterns = [
     #登录界面
