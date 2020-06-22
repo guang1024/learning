@@ -7,5 +7,5 @@ from . import views
 
 urlpatterns = [
     #登录界面
-    path(r'login/', login, {'template_name': 'users/login.html'}, name='login'),
+    path(r'login/', login, {'users/login.html'}, name='login'),
 ]
