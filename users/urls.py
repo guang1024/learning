@@ -11,5 +11,6 @@ from . import views
 urlpatterns = [
     #登录界面
     #re_path(r'^login/$', login, {'template_name': 'users/login.html'}, name='login'),
-    path(r'login/', LoginView.as_view(template_name='users/login.html'), name='login')
+    path(r'login/', LoginView.as_view(template_name='users/login.html'), name='login'),
+    path(r'logout/', views.logout_view, name='logout')
 ]
