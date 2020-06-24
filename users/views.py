@@ -28,3 +28,4 @@ def register(request):
             return HttpResponseRedirect(reverse('learning_logs:index'))
     context = {'form': form}
     return render(request, 'users/register.html', context)
+
