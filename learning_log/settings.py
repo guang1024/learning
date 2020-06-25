@@ -131,6 +131,5 @@ LOGIN_URL = '/users/login'
 BOOTSTRAP3 = {
     'include_jquery': True
 }
-STATICFILES_DIRS={
-    os.path.join('static')
-}
+
+STATICFILES_DIRS = ( os.path.join('static'), )
